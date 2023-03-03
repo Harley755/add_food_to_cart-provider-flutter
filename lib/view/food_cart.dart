@@ -57,7 +57,7 @@ class _FoodCartState extends State<FoodCart> {
           Align(
             alignment: Alignment.bottomCenter,
             child: Container(
-              padding: const EdgeInsets.only(bottom: 20.0),
+              padding: const EdgeInsets.all(20.0),
               child: Expanded(
                 child: StreamBuilder<double>(
                   stream: context.read<FoodProvider>().getPrice(getMyCart),
